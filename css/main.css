@@ -86,6 +86,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* css variables I might use in the project */
+   :root { /* var(-- ); */
+    --light-text: #f5e6eb;
+    --dark-text: #192a51;
+    --accent: #b17fc4;
+    --dark-primary: #192a51;
+    --light-primary: #f5e6eb;
+    --hero: url("../img/unplugged-retreat.jpg");
+    --profile: url("../img/unplugged-retreat-features.jpg");
+    /* don't forget to change the Google Font links in the head */
+    --p-font:'Lekton', sans-serif;
+    --header-font: 'Lexend Tera', sans-serif;
+  }
 
 /* General Styles */
 html {
