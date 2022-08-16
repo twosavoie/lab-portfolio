@@ -86,19 +86,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /* css variables I might use in the project */
-   :root { /* var(-- ); */
-    --light-text: #f5e6eb;
-    --dark-text: #192a51;
-    --accent: #b17fc4;
-    --dark-primary: #192a51;
-    --light-primary: #f5e6eb;
-    --hero: url("../img/unplugged-retreat.jpg");
-    --profile: url("../img/unplugged-retreat-features.jpg");
-    /* don't forget to change the Google Font links in the head */
-    --p-font:'Lekton', sans-serif;
-    --header-font: 'Lexend Tera', sans-serif;
-  }
+/* css variables I might use in the project */
+:root {
+  /* var(-- ); */
+  --light-text: #f5e6eb;
+  --dark-text: #192a51;
+  --accent: #b17fc4;
+  --dark-primary: #192a51;
+  --light-primary: #f5e6eb;
+  --hero: url("../img/unplugged-retreat.jpg");
+  --profile: url("../img/unplugged-retreat-features.jpg");
+  /* don't forget to change the Google Font links in the head */
+  --p-font: 'Poppins', sans-serif;
+  --header-font: 'Poiret One', cursive;
+  --main-header-font: 'Carter One', cursive;
+}
 
 /* General Styles */
 html {
@@ -107,7 +109,7 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Lekton', sans-serif;
+  font-family: var(--p-font);
   color: #192A51;
   background-color: white;
   /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
@@ -127,7 +129,7 @@ a {
 
 h1 {
   color: #F5E6E8;
-  font-family: 'Lexend Tera', sans-serif;
+  font-family: var(--main-header-font);
   font-size: 1.75rem;
   line-height: 1.5;
   width: 100%
@@ -135,7 +137,7 @@ h1 {
 
 h2 {
   color: #F5E6E8;
-  font-family: 'Lexend Tera', sans-serif;
+  font-family: var(--header-font);
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -173,7 +175,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lexend Tera', sans-serif;
+  font-family: var(--main-header-font);
   line-height: 1.5;
   width: 100%
 }
@@ -311,6 +313,19 @@ figure {
 
 header {
   background-color: #192A51;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(148deg, rgba(2, 0, 36, 1) 0%, rgba(25, 42, 81, 1) 46%, rgba(0, 212, 255, 1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(148deg, rgba(2, 0, 36, 1) 0%, rgba(25, 42, 81, 1) 61%, rgba(0, 212, 255, 1) 100%);
+  /* background-image: linear-gradient(148deg, rgba(2, 0, 36, 0.8) 0%, rgba(25, 42, 81, 0.8) 61%, rgba(0, 212, 255, 0.8) 100%), url("../img/billie-holiday.png"); */
+  /* background-image: linear-gradient(148deg, rgba(2, 0, 36, 0.8) 0%, rgba(25, 42, 81, 0.8) 61%, rgba(0, 212, 255, 0.8) 100%), url("../img/praveen-kumar-mathivanan-j7qJLn4Chzs-unsplash.jpg"); */
+  /* Photo by Praveen kumar Mathivanan on Unsplash */
+  background-image: linear-gradient(148deg, rgba(2, 0, 36, 0.8) 0%, rgba(25, 42, 81, 0.8) 61%, rgba(0, 212, 255, 0.8) 100%), url("../img/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
+  /* Photo by JJ Ying on Unsplash */
+  background-position: center;
+  background-size: cover;  
+  /* https://cssgradient.io */
+  /* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
 }
 
 header nav ul li {
@@ -411,6 +426,15 @@ header h2 {
 #about {
   width: 100%;
   background-color: #192A51;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(25, 42, 81, 1) 57%, rgba(0, 212, 255, 1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(25, 42, 81, 1) 74%, rgba(0, 212, 255, 1) 100%);
+  background-image: linear-gradient(148deg, rgba(2, 0, 36, 0.8) 0%, rgba(25, 42, 81, 0.8) 61%, rgba(0, 212, 255, 0.8) 100%), url("../img/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
+  /* Photo by JJ Ying on Unsplash */
+  background-position: center;
+  background-size: cover; 
+  /* https://cssgradient.io */
 }
 
 #profile-image {
