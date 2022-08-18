@@ -39,18 +39,28 @@
         <img src="img/Logo_final_70x 2.png" alt="LS Codes logo green daisy">
       </figure> -->
       <!-- adding a responsive nav -->
-      <nav class="navbar">
+      <!-- adding the role was suggested - but is it needed? -->
+      <nav class="navbar" role="navigation">
+        <!-- doesn't seem to matter if this is above or below nav for functionality. I wonder if it does for screen readers?  -->
+        <!-- maybe use font awesome icons instead? but I kind of like these -->
+        <!-- Do I need some sort of aria attribute so it's clear to screen readers what these are? -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- the navMenu is toggled off and on so I believe that there is a nav here is accessible to screen readers -->
         <ul class="nav-menu">
           <li class="nav-item"><a href="#work">projects</a></li>
           <li class="nav-item"><a href="#skills">skills</a></li>
           <li class="nav-item"><a href="#about">about</a></li>
           <li class="nav-item"><a href="#contact" id="contact-link">contact me</a></li>
         </ul>
-        <div class="hamburger">
+        <!-- <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </div> -->
       </nav>
       <div class="home-title">
         <h1>Hi there, I’m Lisa Savoie!</h1>
