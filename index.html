@@ -45,11 +45,12 @@
         <!-- maybe use font awesome icons instead? but I kind of like these -->
         <!-- Do I need some sort of aria attribute so it's clear to screen readers what these are? -->
         <!-- <div class="hamburger" aria-expanded="false" aria-controls="responsive-menu"> -->
-          <button class="hamburger" aria-expanded="false" aria-controls="responsive-menu" aria-label="responsive-menu">
+        <button class="hamburger" aria-expanded="false" aria-controls="responsive-menu" aria-label="mobile menu"
+          role="button">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        <!-- </div> -->
+          <!-- </div> -->
         </button>
         <!-- the navMenu is toggled off and on so I believe that there is a nav here is accessible to screen readers -->
         <ul class="nav-menu" id="responsive-menu">
@@ -206,11 +207,16 @@
         <div class="contact-info follow-section">
           <h5 class="contact-title">Follow me</h5>
           <ul class="social-icons">
-            <li><a href="https://www.linkedin.com/school/skillcrush/mycompany/" target="_blank"><i
-                  class="fab fa-linkedin-in"></i></a>
+            <!-- added aria-label to announce what icon is. could also use a <span> with the words but visually hide it and then hide the logo with aria-hidden="true" -->
+            <!-- the class in this boilerplate to hide is "hidden" or use "hidden" as an attribute -->
+            <!-- tried both - neither seem to work with voice over the way I would expect -->
+            <li><a href="https://www.linkedin.com/in/lisasavoie/" target="_blank"><span class="hidden">Lisa on
+                  LinkedIn</span><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
             </li>
-            <li><a href="https://github.com/skillcrush" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://twitter.com/Skillcrush" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/twosavoie" target="_blank"><span class="hidden">Lisa on GitHub</span><i
+                  class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/twosavoie" target="_blank"><span class="hidden">Lisa on Twitter</span><i
+                  class="fab fa-twitter" aria-hidden="true"></i></a></li>
           </ul>
         </div>
         <div class="contact-info">

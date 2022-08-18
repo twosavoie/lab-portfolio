@@ -391,22 +391,33 @@ button {
 @media only screen and (max-width: 1023px) {
   .nav-menu {
     position: fixed;
+    /* if I remove left, the menu comes down from the top of the screen */
     left: -100%;
-    top: 5rem;
+    /* top: 5rem; */
+    top: -100%; 
     flex-direction: column;
     background-color: var(--dark-primary);
+    background-color: #373e5b;
+    background-color: rgba(55, 62, 91, 0.97);
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
+    transition: 0.5s;
     box-shadow:
       0 10px 27px rgba(0, 0, 0, 0.05);
+      /* display: none; */
   }
 
   .nav-menu.active {
     left: 0;
+    /* allows the menu to land under the button */
+    top: 5rem; 
+    /* display: block; */
   }
-
+  /* .hide {
+    display:none;
+  } */
   .nav-item {
     margin: 2.5rem 0;
   }

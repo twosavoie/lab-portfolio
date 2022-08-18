@@ -22,6 +22,7 @@ navItem.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    // navMenu.classList.add("hide"); // trying 
     hamburger.setAttribute('aria-expanded', 'false');
 }
 
