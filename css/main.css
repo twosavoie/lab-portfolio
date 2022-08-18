@@ -139,6 +139,7 @@ h1 {
 h2 {
   color: #F5E6E8;
   font-family: var(--header-font);
+  /* font-family: var(--p-font); */
   font-size: 1.25rem;
   line-height: 1.5;
   width: 100%;
@@ -372,7 +373,10 @@ nav ul {
 .hamburger {
   display: none;
 }
-
+button {
+  background: transparent;
+  border: none;
+}
 .bar {
   display: block;
   width: 25px;

@@ -44,11 +44,13 @@
         <!-- doesn't seem to matter if this is above or below nav for functionality. I wonder if it does for screen readers?  -->
         <!-- maybe use font awesome icons instead? but I kind of like these -->
         <!-- Do I need some sort of aria attribute so it's clear to screen readers what these are? -->
-        <div class="hamburger" aria-expanded="false" aria-controls="responsive-menu">
+        <!-- <div class="hamburger" aria-expanded="false" aria-controls="responsive-menu"> -->
+          <button class="hamburger" aria-expanded="false" aria-controls="responsive-menu" aria-label="responsive-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        <!-- </div> -->
+        </button>
         <!-- the navMenu is toggled off and on so I believe that there is a nav here is accessible to screen readers -->
         <ul class="nav-menu" id="responsive-menu">
           <li class="nav-item"><a href="#work">projects</a></li>
