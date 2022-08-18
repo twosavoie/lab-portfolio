@@ -3,12 +3,13 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
+// replaced with hamburger.addEventListener below
+// hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+// function mobileMenu() {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// }
 
 // This is part of the instructions but the instructions have the wrong class name
 // const navLink = document.querySelectorAll(".nav-link");
@@ -21,4 +22,17 @@ navItem.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    hamburger.setAttribute('aria-expanded', 'false');
 }
+
+hamburger.addEventListener('click', function(){
+    if (hamburger.classList.contains('active')) {
+      this.setAttribute('aria-expanded', 'false');
+      hamburger.classList.remove('active');
+      navMenu.classList.remove("active");
+    } else {
+      hamburger.classList.add('active'); 
+      navMenu.classList.toggle("active");
+      this.setAttribute('aria-expanded', 'true');
+    }
+  });
