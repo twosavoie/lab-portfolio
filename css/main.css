@@ -97,9 +97,11 @@ textarea {
   --hero: url("../img/unplugged-retreat.jpg");
   --profile: url("../img/unplugged-retreat-features.jpg");
   /* don't forget to change the Google Font links in the head */
-  --p-font: 'Poppins', sans-serif;
+  /* --p-font: 'Poppins', sans-serif; */
+  --p-font: 'Mitr', sans-serif;
   /* --header-font: 'Poiret One', cursive; */
-  --header-font: 'Aboreto', cursive;
+  /* --header-font: 'Aboreto', cursive; */
+  --header-font: 'Exo', sans-serif;
   --main-header-font: 'Carter One', cursive;
 }
 
