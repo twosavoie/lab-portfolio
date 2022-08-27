@@ -500,6 +500,44 @@ header h2 {
   background-color: #0F1C39;
 }
 
+/* modal */
+.modal {
+  display: none;
+  position: relative;
+  background: #fff;
+  padding: 2em 1em 1em;
+  border-radius: 10px;
+}
+.modal img {
+  width: 80%;
+}
+.modal.show-modal {
+  display: block;
+}
+.modal .modal-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3d6988;
+  font-size: 2rem;
+}
+
+.modal .modal-x:hover {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #4ba1c0;
+}
+/* modal */
+
+/* Work */
+
 #skills h4 {
   margin: 40px 0 20px 0;
   font-weight: bold;

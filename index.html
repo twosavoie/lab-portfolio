@@ -31,9 +31,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Exo:ital,wght@1,300&family=Mitr:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Carter+One&family=Exo:ital,wght@1,300&family=Mitr:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- fonts chosen with https://fontjoy.com -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- copied from Skillcrush cde for lesson 7, challenge 1 JS Fundamentals -->
 </head>
 
 <body>
@@ -82,11 +88,16 @@
         <div class="content-wrapper">
           <h3 class="portfolio-header">Projects</h3> <!-- implement change to Projects -->
           <div class="portfolio-wrapper">
+            <!-- html for modal -->
+            <div class="modal">
+              <span class="modal-x"><i class="fas fa-times"></i></span>
+              <img src="img/sticky-note.png" class="modal-image" />
+            </div>
+            <!-- end html for modal -->
             <div class="home-portfolio-piece">
-
               <figure>
-                <a href="https://i4u8y.csb.app" target="_blank"><img src="img/sticky-note.png"
-                    alt="Sticky Note Project"></a>
+                <a href="https://i4u8y.csb.app" target="_blank"><img src="img/sticky-note.png" alt="Sticky Note Project"
+                    class="enlarge-image"></a>
               </figure>
               <h4>Super Sticky Notes</h4>
               <p class="project-description left-align-text">Greenfield project creating a Sticky Notes web app. Uses
@@ -102,7 +113,7 @@
             <div class="home-portfolio-piece">
               <figure>
                 <a href="https://skillcrush.github.io/github-repo-gallery/" target="_blank"><img
-                    src="img/github-repo-gallery.png" alt="GitHub Repo Gallery"></a>
+                    src="img/github-repo-gallery.png" alt="GitHub Repo Gallery" class="enlarge-image"></a>
               </figure>
               <h4>GitHub Repo Gallery</h4>
               <p class="project-description left-align-text">Uses GitHub's API to pull data from my GitHub portfolio to
@@ -116,7 +127,7 @@
             <div class="home-portfolio-piece">
               <figure>
                 <a href="https://skillcrush.github.io/guess-the-word/" target="_blank"><img
-                    src="img/guess-the-word-game.png" alt="Guess the Word Game"></a>
+                    src="img/guess-the-word-game.png" alt="Guess the Word Game" class="enlarge-image"></a>
               </figure>
               <h4>Guess the Word Game</h4>
               <p class="project-description left-align-text">Players guess the word by entering one letter at a time. If
@@ -129,7 +140,7 @@
             <div class="home-portfolio-piece">
               <figure>
                 <a href="https://skillcrush.github.io/206-unplugged_retreat/" target="_blank"><img
-                    src="img/unplugged.png" alt="Unplugged Site"></a>
+                    src="img/unplugged.png" alt="Unplugged Site" class="enlarge-image"></a>
               </figure>
               <h4>Unplugged</h4>
               <p class="project-description left-align-text">A multi-page responsive website coded with Flexbox. This
@@ -143,7 +154,7 @@
             <div class="home-portfolio-piece">
               <figure>
                 <a href="https://skillcrush.github.io/206-rogue_pickings/" target="_blank"><img
-                    src="img/rogue-pickings.png" alt="Rogue Pickings site"></a>
+                    src="img/rogue-pickings.png" alt="Rogue Pickings site" class="enlarge-image"></a>
               </figure>
               <h4>Rogue Pickings</h4>
               <p class="project-description left-align-text">A simple home page perfect for a pop-up restaurant or food
